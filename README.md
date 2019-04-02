@@ -10,7 +10,7 @@ Created by <a href="http://campar.in.tum.de/Main/YongHengZhao" target="_blank">Y
 <a href="url"><img src="https://github.com/yongheng1991/3D-point-capsule-networks/blob/master/docs/tableleg2.gif" height="110" width="228" ></a>
 <a href="url"><img src="https://github.com/yongheng1991/3D-point-capsule-networks/blob/master/docs/table_surface2.gif" height="173" width="179" ></a>
 
-##### Distribution of capsule reconstruction 
+##### Distribution of capsule reconstruction(unsupervised learning) 
 ![](https://github.com/yongheng1991/3D-point-capsule-networks/blob/master/docs/spatial_attention.png )
 
 ### Introduction
