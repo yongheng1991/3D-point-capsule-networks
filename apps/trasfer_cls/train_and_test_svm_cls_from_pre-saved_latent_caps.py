@@ -117,13 +117,13 @@ def main():
         batch_id+=1
         if(batch_id % 10 == 0):
             print('add test batch: ', batch_id )
-        
+     
     train_feature=train_feature[1:,:]
     train_label=train_label[1:]
     test_feature=test_feature[1:,:]
     test_label=test_label[1:]
       
-    
+    print('training the liner SVM.......') 
     clf = LinearSVC()
     clf.fit(train_feature, train_label)
     confidence = clf.score(test_feature, test_label)
@@ -142,7 +142,7 @@ if __name__ == "__main__":
     parser.add_argument('--latent_vec_size', type=int, default=64, help='scale of latent caps')
 
     parser.add_argument('--num_points', type=int, default=2048, help='input point set size')
-    parser.add_argument('--model', type=str, default=' ', help='model path')
+    parser.add_argument('--model', type=str, default='', help='model path')
     parser.add_argument('--dataset', type=str, default='shapenet_part', help='dataset: shapenet_part, shapenet_core13, shapenet_core55, modelent40')
     parser.add_argument('--percent_training_dataset', type=int, default=100, help='traing cls with percent of training_data')
     

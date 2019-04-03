@@ -155,7 +155,15 @@ class PointCapsNet(nn.Module):
         dist1, dist2 = distChamfer(data_, reconstructions_)
         loss = (torch.mean(dist1)) + (torch.mean(dist2))
         return loss 
-
+    
+# This is a single network which can decode the point cloud from pre-saved latent capsules
+class PointCapsNetDecoder(nn.Module):
+    def __init__(self, prim_caps_size, prim_vec_size, digit_caps_size, digit_vec_size, num_points):
+        super(PointCapsNetDecoder, self).__init__()
+        self.caps_decoder = CapsDecoder(digit_caps_size,digit_vec_size, num_points)
+    def forward(self, latent_capsules):
+        reconstructions = self.caps_decoder(latent_capsules)
+        return  reconstructions
 
 if __name__ == '__main__':
     USE_CUDA = True
