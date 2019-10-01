@@ -3,8 +3,9 @@
 ## 3D Point Capsule Networks
 Created by <a href="http://campar.in.tum.de/Main/YongHengZhao" target="_blank">Yongheng Zhao</a>, <a href="http://campar.in.tum.de/Main/TolgaBirdal" target="_blank">Tolga Birdal</a>, <a href="http://campar.in.tum.de/Main/HaowenDeng" target="_blank">Haowen Deng</a>, <a href="http://campar.in.tum.de/Main/FedericoTombari" target="_blank">Federico Tombari </a> from TUM.
 
-This repository contains the implementation of our [CVPR 2019 paper *3D Point Capsule Networks*](https://arxiv.org/abs/1812.10775). In particular, we release code for training and testing a 3D-PointCapsNet network for classification, reconstruction, part interpolation and extraction of 3d local descriptors as well as the pre-trained models for quickly replicating our results.
+This repository contains the implementation of our [CVPR 2019 paper *3D Point Capsule Networks*](https://arxiv.org/abs/1812.10775). In particular, we release code for training and testing a 3D-PointCapsNet network for classification, reconstruction, part interpolation and extraction of 3d local descriptors as well as the pre-trained models for quickly replicating our results. 
 
+For an intuitive explanation of the 3D point capsule networks, please check out [Tolga's CVPR tutorial](https://www.youtube.com/watch?v=fbhbuH9mUx0).
 
 ![](https://github.com/yongheng1991/3D-point-capsule-networks/blob/master/docs/teaser.png )
 
