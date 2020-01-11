@@ -45,12 +45,14 @@ Install h5py for Python:
   sudo pip install h5py
 ```
 
-Install Chamfer distance package:
+Install Chamfer Distance(CD) package:
 (Be aware of the PyTorch 1.0.1. It may have a problem for building this cuda package.)
 ```bash
   cd models/nndistance
   python build.py install
 ```
+(In case you are using pytorch version higher than 1.0, you could use the updated chamfer distance package named "torch-nndistance". But you need to modify the package usage in the several scripts in which the CD library is used. You can find "test.py" in the updated package folder for the usage reference.
+
 
 To visualize the training process in PyTorch, consider installing  <a href="https://github.com/yunjey/pytorch-tutorial/tree/master/tutorials/04-utils/tensorboard" target="_blank">TensorBoard</a>.
 
