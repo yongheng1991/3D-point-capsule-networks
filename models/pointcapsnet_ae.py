@@ -18,9 +18,11 @@ from collections import OrderedDict
 import sys
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(os.path.join(BASE_DIR, 'nndistance'))
-from modules.nnd import NNDModule
-distChamfer = NNDModule()
+#sys.path.append(os.path.join(BASE_DIR, 'nndistance'))
+#from modules.nnd import NNDModule
+import torch_nndistance as NND
+#distChamfer = NNDModule()
+distChamfer = NND.nnd
 USE_CUDA = True
 
 
